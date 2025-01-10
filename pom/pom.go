@@ -9,9 +9,6 @@ import (
 // Official Pom Schema https://maven.apache.org/xsd/maven-4.0.0.xsd
 type Model struct {
 	XMLName        xml.Name `xml:"project"`
-	Xmlns          string   `xml:"xmlns,attr"`
-	SchemaLocation string   `xml:"xmlns:xsi,attr"`
-	Xsi            string   `xml:"xsi:schemaLocation,attr"`
 	// Declares to which version of project descriptor this POM conforms.
 	ModelVersion string `xml:"modelVersion,omitempty"`
 	// The location of the parent project, if one exists. Values from the parent project will be the default for this project if they are left unspecified. The location is given as a group ID, artifact ID and version.
